@@ -1,15 +1,15 @@
 .main{
     height: 100vh;
-    background-image: 
-    linear-gradient(to top,rgb(0, 0, 0) 0,rgba(0, 0, 0, 0.438) 40%,rgba(0, 0, 0, 0.644) 75%,rgb(0, 0, 0) 100%),
+    background-image:
+    linear-gradient(to top,rgba(0, 0, 0, 0.829) 0,rgba(0, 0, 0, 0.493) 40%,rgba(0, 0, 0, 0.486) 75%,rgba(17, 17, 17, 0.897) 100%),
     url('../../../../../assets/images/bg.jpg');
-    background-size: 100% ;  
-    background-size: cover;  
+    background-size: 100% ;
+    background-size: cover;
 }
 
 
 .navbarContainer{
-    
+
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -19,4 +19,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.btn{
+  background-color: #e50914;
+  width: 150px;
+  border:#e50914;
+  height: 50px;
+  margin-top: 5px;
 }

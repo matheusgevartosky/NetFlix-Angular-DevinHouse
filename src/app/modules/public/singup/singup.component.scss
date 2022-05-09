@@ -1,0 +1,31 @@
+.containerSingup{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.cardSingup{
+  color: white;
+  padding: 50px;
+  width: 50vh;
+  text-align: center;
+  align-items: center;
+
+}
+
+input{
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: none;
+  padding: 10px;
+
+}
+
+.btn {
+  background-color: #e50914;
+  margin-top: 10px;
+  border: #e50914;
+  width: 200px;
+}

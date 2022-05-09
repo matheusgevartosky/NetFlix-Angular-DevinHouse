@@ -8,9 +8,9 @@ import { RecoverComponent } from './recover/recover.component';
 
 const routes: Routes = [
   {
-    path:'', component: PublicPageComponent,
+    path:'home', component: PublicPageComponent,
     children:[
-      {path:'home', component: LandingComponent},
+      {path:'', component: LandingComponent},
       {path: 'login', component: LoginComponent},
       {path: 'cadastrar', component: SingupComponent},
       {path: 'recuperar', component: RecoverComponent}

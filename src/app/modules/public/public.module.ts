@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router'
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms'
 
 import { PublicRoutingModule } from './public-routing.module';
 import { LandingComponent } from './landing/landing.component';
@@ -17,12 +18,14 @@ import { PublicPageComponent } from './layout/public-page/public-page.component'
     SingupComponent,
     LoginComponent,
     RecoverComponent,
-    
+
   ],
   imports: [
     CommonModule,
     PublicRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PublicModule { }

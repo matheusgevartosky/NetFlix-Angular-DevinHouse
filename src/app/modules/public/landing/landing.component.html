@@ -1,12 +1,14 @@
 <div>
-    <div class="container">
-        <h1 class="title">Filmes, séries e muito mais. Sem limites.</h1>
-        <h3 class="subtitle">Assista onde quiser. Cancele quando quiser.</h3>
-        <h6>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h6>
-        <form class="subform">
-            
-            <input type="email" placeholder="Email"> 
-            <button type="submit">Vamos lá ></button>
-        </form>
+  <div class="containerCard">
+    <h1 class="title">Filmes, séries e muito mais. Sem limites.</h1>
+    <h3 class="subtitle">Assista onde quiser. Cancele quando quiser.</h3>
+    <div class="cardForm">
+      <h6>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h6>
+      <form class="subform">
+        <input type="email" placeholder="Email" name="email" class="form-control form-control-lg" [(ngModel)]="inputEmail">
+        <button type="submit" class="btn btn-primary btn-lg" (click)="goToSingUp()">Vamos lá ></button>
+
+      </form>
     </div>
+  </div>
 </div>

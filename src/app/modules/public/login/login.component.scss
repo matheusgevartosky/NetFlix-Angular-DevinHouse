@@ -1,0 +1,26 @@
+.cardLogin{
+  width: 50vh;
+  height: 60vh;
+  background-color: #0000007a;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+  margin-top: 50px;
+
+}
+
+.login{
+  margin: 50px;
+  color: white;
+}
+
+h1,input{
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #e50914;
+  margin-top: 20px;
+  border: #e50914;
+  width: 200px;
+}

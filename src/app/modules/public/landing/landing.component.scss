@@ -2,8 +2,10 @@ div{
     color: white;
 }
 
-.container{
-    margin-top: 100px;
+.containerCard{
+    width: 60vh;
+    text-align: center;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,23 +13,36 @@ div{
     line-height: 1.1;
 }
 
-.subform{
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    
-    align-items: center;
+.cardForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
 }
 
-h1, h3, h6{
+.subform{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+h1{
+  padding: 5px;
+    font-weight:bold;
+    line-height: 1.5;
+}
+
+ h3{
     padding: 5px;
+    font-weight:500;
+    line-height: 1.5;
 }
 button{
     border: none;
     padding: 10px;
     background-color: #e50914;;
     color: white;
-    width: 100px;
+    width: 200px;
     font-weight: 400;
     vertical-align: middle;
     letter-spacing: .1px;
