@@ -1,0 +1,22 @@
+.main{
+    height: 100vh;
+    background-image: 
+    linear-gradient(to top,rgb(0, 0, 0) 0,rgba(0, 0, 0, 0.438) 40%,rgba(0, 0, 0, 0.644) 75%,rgb(0, 0, 0) 100%),
+    url('../../../../../assets/images/bg.jpg');
+    background-size: 100% ;  
+    background-size: cover;  
+}
+
+
+.navbarContainer{
+    
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
