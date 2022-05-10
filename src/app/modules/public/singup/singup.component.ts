@@ -28,6 +28,7 @@ export class SingupComponent implements OnInit {
 
   setUser(){
     this.usersMethod.setUser(this.form.value.email, this.form.value)
+
   }
 
 }

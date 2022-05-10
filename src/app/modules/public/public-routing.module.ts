@@ -15,6 +15,10 @@ const routes: Routes = [
       {path: 'cadastrar', component: SingupComponent},
       {path: 'recuperar', component: RecoverComponent}
     ]
+  },
+  {
+    path:'private',
+    loadChildren:() => import('../private/private.module').then(m => m.PrivateModule)
   }
 
 ];

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetMoviesService } from '../../services/get-movies.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private moviesList: any;
+
+  constructor(private _getMovies: GetMoviesService) { }
 
   ngOnInit(): void {
+    this.getMovies();
+
+  }
+
+   async getMovies(){
+    const DATA = await this._getMovies.allMovies();
+    this.moviesList = DATA.results;
+    console.log(this.moviesList);
   }
 
 }
