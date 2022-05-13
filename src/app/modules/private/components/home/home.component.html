@@ -1,5 +1,12 @@
-<div class="cardContainer">
+<div class="main">
+
+  <div class="cardContainer">
   <div class="Card" *ngFor="let item of movie">
-    <h1>{{item.title}}</h1>
+    <div>
+      <img [src]="'https://image.tmdb.org/t/p/w500/' + item.poster_path">
+    </div>
+
   </div>
+</div>
+
 </div>

@@ -1,0 +1,51 @@
+.main{
+  display: flex;
+  align-content: center;
+}
+.cardContainer{
+  margin-left: 100px;
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.Card{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  word-wrap: break-word;
+  margin: 15px;
+  padding: 25px;
+  background-color: #0000007a;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 5px;
+  transition: width 2s, height 2s;
+}
+
+.Card:hover{
+  cursor: pointer;
+  border: 2px solid snow;
+  width: 250px;
+  height: 320px;
+
+
+}
+
+img{
+  width: 200px;
+  height: 300px;
+
+}
+
+.content{
+  margin:20px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+
+}
