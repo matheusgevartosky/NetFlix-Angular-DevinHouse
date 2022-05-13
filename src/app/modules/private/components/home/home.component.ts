@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieInterface } from '../../interfaces/movie-interface';
 import { GetMoviesService } from '../../services/get-movies.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { GetMoviesService } from '../../services/get-movies.service';
 })
 export class HomeComponent implements OnInit {
 
-  private moviesList: any;
+  public movie!:MovieInterface[];
 
   constructor(private _getMovies: GetMoviesService) { }
 
@@ -19,8 +20,8 @@ export class HomeComponent implements OnInit {
 
    async getMovies(){
     const DATA = await this._getMovies.allMovies();
-    this.moviesList = DATA.results;
-    console.log(this.moviesList);
+    this.movie = DATA.results;
+    console.log(this.movie);
   }
 
 }
