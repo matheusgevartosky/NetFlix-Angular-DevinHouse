@@ -1,12 +1,9 @@
 <div class="main">
-
   <div class="cardContainer">
-  <div class="Card" *ngFor="let item of movie">
-    <div>
-      <img [src]="'https://image.tmdb.org/t/p/w500/' + item.poster_path">
+    <div class="Card" *ngFor="let item of movie">
+      <a (click)="goToDetails([item])">
+        <img [src]="'https://image.tmdb.org/t/p/w500/' + item.poster_path">
+      </a>
     </div>
-
   </div>
-</div>
-
 </div>

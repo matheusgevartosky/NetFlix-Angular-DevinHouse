@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieInterface } from '../../interfaces/movie-interface';
 import { GetMoviesService } from '../../services/get-movies.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   public movie!:MovieInterface[];
 
-  constructor(private _getMovies: GetMoviesService) { }
+  constructor(private _getMovies: GetMoviesService, private router: Router) { }
 
   ngOnInit(): void {
     this.getMovies();
@@ -22,6 +23,10 @@ export class HomeComponent implements OnInit {
     const DATA = await this._getMovies.allMovies();
     this.movie = DATA.results;
     console.log(this.movie);
+  }
+
+  goToDetails(id:any){
+    this.router.navigate(['/home/detalhes'])
   }
 
 }
